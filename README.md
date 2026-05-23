@@ -1,24 +1,37 @@
-# TechFlow Task Manager 
+# TaskFlow – Sistema de Gerenciamento de Tarefas Ágil
+
+> **TechFlow Solutions** | Disciplina: Engenharia de Software | UniFECAF
+
+---
 
 ##  Objetivo do Projeto
-[cite_start]Este sistema foi desenvolvido para uma startup de logística que necessita gerenciar seu fluxo de trabalho em tempo real, priorizando tarefas críticas e monitorando o desempenho da equipe[cite: 153, 154].
+Este sistema foi desenvolvido para uma startup de logística que necessita gerenciar seu fluxo de trabalho em tempo real, priorizando tarefas críticas e monitorando o desempenho da equipe de forma ágil e integrada.
 
-## Metodologia Adotada
-Utilizamos a metodologia **Ágil (Kanban)** para garantir flexibilidade e entregas contínuas. [cite_start]O controle de tarefas é feito através da aba **Projects** do GitHub, garantindo transparência no processo e organização visual em colunas (A Fazer, Em Progresso e Concluído)[cite: 160, 189].
+##  Metodologia Adotada
+Utilizamos a metodologia Ágil **Kanban** para garantir flexibilidade e entregas contínuas. O controle de tarefas é documentado de forma transparente e visual através da aba **Projects** do GitHub, utilizando a divisão clássica em colunas: *A Fazer*, *Em Progresso* e *Concluído*.
 
-## Escopo Inicial
-* [cite_start]Cadastro e listagem de tarefas (CRUD básico)[cite: 161, 195].
-* Organização de fluxo por status.
-* [cite_start]Pipeline de automação via GitHub Actions para testes unitários[cite: 165, 198].
+---
 
-##  Gestão de Mudanças (Simulação)
-[cite_start]Nesta etapa, simulamos uma alteração de escopo solicitada pelo cliente após o início do desenvolvimento[cite: 167, 200].
+##  Escopo do Projeto
 
-* **Nova Funcionalidade:** Implementação de um sistema de "Níveis de Prioridade" (Alta, Média, Baixa) nas tarefas.
-* [cite_start]**Justificativa:** O cliente identificou a necessidade de destacar visualmente entregas críticas para otimizar a alocação da equipe de logística[cite: 249].
-* [cite_start]**Impacto no Projeto:** Adição de um novo card no Kanban e realização de commit específico para a implementação da lógica de prioridade[cite: 266, 267].
+**Escopo Inicial:**
+- CRUD completo de tarefas (criar, listar, editar e excluir) via interface de linha de comando (CLI).
+- Quadro Kanban estruturado em 3 colunas (*A Fazer*, *Em Progresso*, *Concluído*).
+- Atribuição de níveis de prioridade (🟢 Baixa, 🟡 Média, 🔴 Alta) para triagem de criticidade.
+- Persistência de dados local automática utilizando arquivos no formato JSON.
+- Configuração de Pipeline de Integração Contínua (CI) via **GitHub Actions** para execução de testes unitários automatizados.
 
-##  Instruções
-1. Navegue até a pasta `/src` para visualizar o código.
-2. Os testes automatizados podem ser conferidos na aba **Actions**.
-3. O acompanhamento das tarefas está disponível na aba **Projects**.
+** Gestão de Mudanças (Sprint 2):**
+> Durante o desenvolvimento, o cliente relatou dificuldade em visualizar especificamente as demandas que já estavam sendo executadas pela equipe. Diante disso, foi solicitada uma mudança de escopo de baixo impacto técnico: a implementação de um **filtro dinâmico por status** na listagem e a funcionalidade de **edição de prioridade** de tarefas existentes. As alterações foram incorporadas com sucesso, demonstrando a adaptabilidade do modelo ágil.
+
+---
+
+##  Instruções de Execução
+
+### Pré-requisitos
+Certifique-se de ter o Python 3.11 ou superior instalado em sua máquina.
+
+### 1. Executando o Sistema
+Para iniciar a interface interativa no terminal, navegue até a pasta raiz do projeto e execute:
+```bash
+python main.py
