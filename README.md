@@ -41,4 +41,3 @@ Para rodar os 22 testes unitários do projeto e validar a cobertura de código d
 ```bash
 pytest tests/ -v --cov=src
 ```
-```bash
