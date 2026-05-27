@@ -42,4 +42,3 @@ Para rodar os 22 testes unitários do projeto e validar a cobertura de código d
 pytest tests/ -v --cov=src
 ```
 ```bash
-pip install pytest pytest-cov
