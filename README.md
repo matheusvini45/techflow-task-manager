@@ -41,7 +41,5 @@ Para rodar os 22 testes unitários do projeto e validar a cobertura de código d
 ```bash
 pytest tests/ -v --cov=src
 ```
-
-Para instalar o framework de testes e a ferramenta de cobertura de código, execute no seu terminal:
 ```bash
 pip install pytest pytest-cov
